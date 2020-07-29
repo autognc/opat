@@ -127,7 +127,7 @@ class PoseAnnotator:
             'translation': self.current_translation.copy()
         }
         with open(self.output_path, 'w') as f:
-            json.dump(self.poses, f, indent=2)
+            json.dump(self.poses, f)
 
     def render(self):
         self.window.clear()
@@ -278,7 +278,7 @@ def main():
     parser.add_argument('output_path', type=str, help='Output path for poses, JSON. Will load poses if path exists already.')
     args = parser.parse_args()
 
-    annotator = PoseAnnotator(args.model_path, args.directory, args.output_path)
+    PoseAnnotator(args.model_path, args.directory, args.output_path)
     pyglet.app.run()
 
 
