@@ -1,5 +1,7 @@
 # Object Pose Annotation Tool
 
+**UPDATE**: This project is archived. See https://github.com/autognc/opat-js for the updated, web-based tool.
+
 A lightweight interactive 6D pose annotation tool. Loads images from a directory and overlays a 3D model on top of them, allowing
 the user to line up the model and an object in the image using keyboard shortcuts. Requires camera intrinsics to be known.
 
